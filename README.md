@@ -1,1 +1,1 @@
-# calculatorA
+# JScalc
