@@ -54,3 +54,12 @@ button:active{
 .opr:active{
     background-color: hsl(103, 57%, 70%); ;
 }
+.calc{
+    background-color: hsl(17, 94%, 42%);
+}
+.calc:hover{
+    background-color: hsl(17, 94%, 60%); ;
+}
+.calc:active{
+    background-color: hsl(17, 94%, 70%); ;
+}
