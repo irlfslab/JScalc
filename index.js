@@ -1,7 +1,7 @@
 const disp = document.getElementById("display");
 
-function addKey(inval){
-    disp.value += inval;
+function addKey(inVal){
+    disp.value += inVal;
 }
 function clearDisp(){
     disp.value = "";
@@ -10,7 +10,17 @@ function deleteNum(){
     disp.value = disp.value.toString().slice(0,-1);
 }
 function calculate(){
-    try{disp.value = eval(disp.value)}
-    catch(error){disp.value = "Error"}
-
+   switch (disp.value){
+    case "":
+    case "+":
+    case "-":
+    case "*":
+    case "/":
+    case ".":
+    case "=":
+        disp.value = "";
+        break;
+    default:
+        disp.value = eval(disp.value);
+    }
 }
