@@ -1,5 +1,5 @@
 const disp = document.getElementById("display");
-let prev='';
+
 function addKey(inval){
     disp.value += inval;
 }
